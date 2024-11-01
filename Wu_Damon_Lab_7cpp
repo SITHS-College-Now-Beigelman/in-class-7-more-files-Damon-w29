@@ -1,0 +1,94 @@
+// Damon Wu 
+// 11/1/2024
+// Lab 7 
+
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<iomanip>
+
+using namespace std;
+
+int main(){
+
+    ifstream infile;
+    ofstream outfile;
+
+    infile.open ("Game_scores.txt");
+    outfile.open ("Shown_score.txt");
+
+//***************************
+    string Name;
+    double pl1score1;
+    double pl1score2;
+    double pl1score3;
+    string Name2;
+    double pl2score1;
+    double pl2score2;
+    double pl2score3;
+    string Name3;
+    double pl3score1;
+    double pl3score2;
+    double pl3score3;
+// ***************************
+    double avg1;
+    double avg2;
+    double avg3;
+
+    // shows code working
+    cout<< "processing informatiom \n";
+
+    // does calculation of scores for player1 
+    infile >> Name;
+    outfile << "Player 1: " << Name << endl;
+    infile >> pl1score1 >> pl1score2 >> pl1score3;
+    avg1 = ((pl1score1 + pl1score2 + pl1score3) /3);
+
+        if (avg1 < 1000)
+            outfile << Name << ", Keep Practicing! \n";
+        if (avg1 >= 1000 && avg1 <= 1500)
+            outfile << Name << ", youre intermediate \n";
+        if (avg1 >= 1500 && avg1 <= 1800)
+            outfile << Name << ", You're advanced, Great Job! \n";
+        if (avg1 >= 1800 && avg1 <= 2000)
+            outfile << Name << ", You're a Master, Excellent! \n";
+        if (avg1 > 2000)
+            outfile << Name << ", You're an Expert! Congrats! \n";
+    
+    // does calculation of scores for player 2
+    infile >> Name2;
+    outfile << "Player 2: " << Name2 << endl;
+    infile >> pl2score1 >> pl2score2 >> pl2score3;
+    avg2 = ((pl2score1 + pl2score2 + pl2score3) /3);
+
+        if (avg2 < 1000)
+            outfile << Name2 << ", Keep Practicing! \n";
+        if (avg2 >= 1000 && avg2 <= 1500)
+            outfile << Name2 << ", youre intermediate \n";
+        if (avg2 >= 1500 && avg2 <= 1800)
+            outfile << Name2 << ", You're advanced, Great Job! \n";
+        if (avg2 >= 1800 && avg2 <= 2000)
+            outfile << Name2 << ", You're a Master, Excellent! \n";
+        if (avg2 > 2000)
+            outfile << Name2 << ", You're an Expert! Congrats! \n";
+
+    // does calculation of scores for player 3
+    infile >> Name3;
+    outfile << "Player 3: " << Name3 << endl;
+    infile >> pl3score1 >> pl3score2 >> pl3score3;
+    avg2 = ((pl3score1 + pl3score2 + pl3score3) /3);
+
+        if (avg3 < 1000)
+            outfile << Name3 << ", Keep Practicing! \n";
+        if (avg3 >= 1000 && avg3 <= 1500)
+            outfile << Name3 << ", youre intermediate \n";
+        if (avg3 >= 1500 && avg3 <= 1800)
+            outfile << Name3 << ", You're advanced, Great Job! \n";
+        if (avg3 >= 1800 && avg3 <= 2000)
+            outfile << Name3 << ", You're a Master, Excellent! \n";
+        if (avg3 > 2000)
+            outfile << Name3 << ", You're an Expert! Congrats! \n";
+
+
+    return 0;
+}
