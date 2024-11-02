@@ -102,5 +102,13 @@ int main(){
 infile.close();
 outfile.close();
 
+/*
+Player 1: James score: 1006.67
+James, You're an intermediate! 
+Player 2: Brian score: 1563.33
+Brian, You're advanced, Great Job! 
+Player 3: Nicholas score: 2140
+Nicholas, You're an Expert! Congrats! 
+*/
     return 0;
 }
