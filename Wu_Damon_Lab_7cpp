@@ -98,6 +98,9 @@ int main(){
         if (avg3 > 2000)
             outfile << Name3 << ", You're an Expert! Congrats! \n";
 
+//closes files
+infile.close();
+outfile.close();
 
     return 0;
 }
