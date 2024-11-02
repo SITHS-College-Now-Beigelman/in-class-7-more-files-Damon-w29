@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "wu_damon_lab_7cpp": "cpp"
+        "wu_damon_lab_7cpp": "cpp",
+        "ostream": "cpp"
     }
 }
